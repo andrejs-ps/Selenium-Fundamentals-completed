@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en" class="h-100">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Credit Association</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+</head>
+<body class="d-flex flex-column h-100">
+
+<header>
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <div class="container-fluid">
+
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Register</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="savings.html">Savings</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"  href="loans.html">Loans</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<!-- Begin page content -->
+<main class="flex-shrink-0">
+    <div class="container">
+      <div class="row g-5">
+
+        <div class="col-md-7 col-lg-8">
+          <br/><br/>
+          <h4 class="mb-3">Get a loan with us!</h4>
+          <form class="needs-validation" novalidate="">
+            <div class="row g-3">
+              <div class="col-sm-6">
+                <label for="borrow" class="form-label">How much would you like to borrow?</label>
+                <input type="text" class="form-control" id="borrow" placeholder="" value="" required="">
+              </div>
+
+              <div class="col-sm-6">
+                    <label for="period" class="form-label">For how long?</label>
+                    <select class="form-select" id="period" required="">
+                        <option>1 month</option>
+                        <option>2 months</option>
+                        <option>1 year </option>
+                    </select>
+                </div>
+            </div>
+
+              <br/>
+              <div role="alert" class="sm-6 alert alert-info" id="result" style="display:none">
+
+              </div>
+
+              <div class="col-sm-6">
+                  <br/>
+                  <label class="form-label">Upload your income statement</label>
+                  <input class="form-control" type="file">
+              </div>
+          </form>
+
+        </div>
+
+          <div class="col-md-7 col-lg-8">
+              <h4 class="mb-3">Terms and conditions</h4>
+              <div class="col-sm-12">
+                  <br/>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eu vestibulum dui. Proin aliquet tortor non aliquet congue. Nunc in blandit eros, et pretium diam. Nulla facilisi. Nullam ligula nulla, laoreet in suscipit sit amet, finibus eget odio. Vivamus varius malesuada magna in interdum. Fusce lacinia condimentum sem, ac feugiat velit. Morbi vulputate eros sit amet fringilla rhoncus. Cras sed pulvinar dolor.
+
+                      Sed placerat lectus et mollis fermentum. Aliquam suscipit rutrum neque, a tristique erat fermentum nec. Cras a aliquet nisl. Cras tincidunt laoreet massa, eget dictum risus pellentesque eu. Cras eget laoreet risus. Aenean sed est maximus, vestibulum mauris suscipit, hendrerit quam. In hendrerit neque eu enim tristique, vel faucibus dolor dapibus.
+
+                      Nunc eu leo aliquam, feugiat diam vitae, auctor enim. Donec interdum odio vitae leo bibendum, id scelerisque mi dignissim. Integer condimentum dictum risus luctus posuere. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Suspendisse vel vulputate risus. Pellentesque hendrerit non lacus vitae semper. Nulla semper molestie magna, non tempus turpis luctus non. Sed odio dolor, efficitur at efficitur ut, finibus at libero. Pellentesque vitae risus a risus vestibulum mollis. Nam ullamcorper turpis id risus tincidunt malesuada. Cras aliquet leo feugiat justo varius, efficitur facilisis velit viverra. Cras augue est, suscipit id nisl sed, faucibus aliquam elit. Aliquam nec aliquet neque. Maecenas euismod mi fermentum vehicula suscipit.
+
+                      Aenean blandit, sapien in aliquam ornare, eros nisi pellentesque metus, et laoreet mi dui vel ex. Donec ullamcorper leo mi, eget ultricies nisl ultrices sed. Morbi auctor sapien a elit vestibulum, sit amet ullamcorper justo viverra. Morbi faucibus mattis malesuada. Praesent bibendum malesuada turpis, a maximus risus egestas ac. Vestibulum laoreet nisl orci, ac rutrum sapien sollicitudin a. Integer commodo fringilla rhoncus. Aenean arcu sem, luctus ut porttitor in, bibendum sit amet magna. Aenean et ultrices sapien. Praesent sit amet pellentesque ligula.
+
+                      Morbi gravida, tortor sit amet suscipit vestibulum, nulla lectus sagittis orci, et dignissim ipsum urna et augue. Vivamus et quam non magna fringilla aliquam id eu lorem. Aliquam aliquam blandit dui, ac porta ante rhoncus et. In at vulputate ligula, in blandit augue. Pellentesque faucibus elit vitae odio lobortis, ac bibendum nibh placerat. Phasellus cursus nisl porta nisi tempor aliquet. Etiam accumsan ut mi malesuada vestibulum. Maecenas dapibus mauris nec nunc laoreet iaculis. Nunc ut neque feugiat, ultricies purus id, placerat purus. Nullam sollicitudin ante et consequat lobortis. Praesent lacinia, velit nec malesuada varius, nibh turpis porta velit, ut imperdiet nibh tellus egestas mauris. Nulla efficitur imperdiet fringilla.
+                  </p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eu vestibulum dui. Proin aliquet tortor non aliquet congue. Nunc in blandit eros, et pretium diam. Nulla facilisi. Nullam ligula nulla, laoreet in suscipit sit amet, finibus eget odio. Vivamus varius malesuada magna in interdum. Fusce lacinia condimentum sem, ac feugiat velit. Morbi vulputate eros sit amet fringilla rhoncus. Cras sed pulvinar dolor.
+
+                      Sed placerat lectus et mollis fermentum. Aliquam suscipit rutrum neque, a tristique erat fermentum nec. Cras a aliquet nisl. Cras tincidunt laoreet massa, eget dictum risus pellentesque eu. Cras eget laoreet risus. Aenean sed est maximus, vestibulum mauris suscipit, hendrerit quam. In hendrerit neque eu enim tristique, vel faucibus dolor dapibus.
+
+                      Nunc eu leo aliquam, feugiat diam vitae, auctor enim. Donec interdum odio vitae leo bibendum, id scelerisque mi dignissim. Integer condimentum dictum risus luctus posuere. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Suspendisse vel vulputate risus. Pellentesque hendrerit non lacus vitae semper. Nulla semper molestie magna, non tempus turpis luctus non. Sed odio dolor, efficitur at efficitur ut, finibus at libero. Pellentesque vitae risus a risus vestibulum mollis. Nam ullamcorper turpis id risus tincidunt malesuada. Cras aliquet leo feugiat justo varius, efficitur facilisis velit viverra. Cras augue est, suscipit id nisl sed, faucibus aliquam elit. Aliquam nec aliquet neque. Maecenas euismod mi fermentum vehicula suscipit.
+
+                      Aenean blandit, sapien in aliquam ornare, eros nisi pellentesque metus, et laoreet mi dui vel ex. Donec ullamcorper leo mi, eget ultricies nisl ultrices sed. Morbi auctor sapien a elit vestibulum, sit amet ullamcorper justo viverra. Morbi faucibus mattis malesuada. Praesent bibendum malesuada turpis, a maximus risus egestas ac. Vestibulum laoreet nisl orci, ac rutrum sapien sollicitudin a. Integer commodo fringilla rhoncus. Aenean arcu sem, luctus ut porttitor in, bibendum sit amet magna. Aenean et ultrices sapien. Praesent sit amet pellentesque ligula.
+
+                      Morbi gravida, tortor sit amet suscipit vestibulum, nulla lectus sagittis orci, et dignissim ipsum urna et augue. Vivamus et quam non magna fringilla aliquam id eu lorem. Aliquam aliquam blandit dui, ac porta ante rhoncus et. In at vulputate ligula, in blandit augue. Pellentesque faucibus elit vitae odio lobortis, ac bibendum nibh placerat. Phasellus cursus nisl porta nisi tempor aliquet. Etiam accumsan ut mi malesuada vestibulum. Maecenas dapibus mauris nec nunc laoreet iaculis. Nunc ut neque feugiat, ultricies purus id, placerat purus. Nullam sollicitudin ante et consequat lobortis. Praesent lacinia, velit nec malesuada varius, nibh turpis porta velit, ut imperdiet nibh tellus egestas mauris. Nulla efficitur imperdiet fringilla.
+                  </p>
+                  <button id="apply" class="btn btn-primary btn-lg" type="submit">Apply</button>
+                  <br/><br/>
+                  <div role="alert" class="col-md-4  alert-info" id="message">
+
+                  </div>
+
+              </div>
+          </div>
+      </div>
+
+
+    </div>
+</main>
+
+<footer class="footer mt-auto py-3 bg-light">
+    <div class="container">
+        <span class="text-muted">© 2022 Credit Union</span>
+        <br/>
+        <span class="text-muted" id="location"></span>
+    </div>
+</footer>
+
+<script src="js/loans.js"></script>
+<script src="js/footer.js"></script>
+
+</body>
+</html>

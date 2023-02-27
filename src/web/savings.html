@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en" class="h-100">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Credit Association</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+</head>
+<body class="d-flex flex-column h-100">
+
+<header>
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <div class="container-fluid">
+
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Register</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="savings.html">Savings</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"  href="loans.html">Loans</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<!-- Begin page content -->
+<main class="flex-shrink-0">
+    <div class="container">
+
+
+      <div class="row g-5">
+
+        <div class="col-md-7 col-lg-8">
+          <br/><br/>
+          <h4 class="mb-3">Deposit your money with us to earn a great yield</h4>
+          <form class="needs-validation" novalidate="">
+            <div class="row g-3">
+              <div class="col-sm-4">
+                <label for="deposit" class="form-label">How much you wish to deposit</label>
+                <input type="text" class="form-control" id="deposit" placeholder="" value="" required="">
+              </div>
+
+                <div class="col-md-4">
+                    <label for="period" class="form-label">Time period</label>
+                    <select class="form-select" id="period" required="">
+                        <option value="6 months">6 months</option>
+                        <option value="1 Year">1 Year</option>
+                        <option value="2 Years">2 Years</option>
+                    </select>
+                </div>
+
+                <div role="alert" class="col-md-8 alert-info" id="result">
+
+                </div>
+                <div class="col-md-12">
+                    <h4 class="mb-3">Current rates (yearly yield)</h4>
+                    <table id="rates" class="table table-striped text-center">
+                        <thead>
+                        <tr>
+                            <td scope="col"></td>
+                            <td scope="col">6 months</td>
+                            <td scope="col">1 year</td>
+                            <td scope="col">2 years</td>
+                        </tr>
+                        </thead>
+                        <tbody class="table-group-divider">
+                        <tr>
+                            <td>Us</td>
+                            <td>4%</td>
+                            <td>5%</td>
+                            <td>6%</td>
+                        </tr>
+                        <tr>
+                            <td>Competition</td>
+                            <td>2%</td>
+                            <td>3%</td>
+                            <td>4%</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+
+          </form>
+        </div>
+      </div>
+    </div>
+</main>
+
+<footer class="footer mt-auto py-3 bg-light">
+    <div class="container">
+        <span class="text-muted">© 2022 Credit Union</span>
+        <br/>
+        <span class="text-muted" id="location"></span>
+    </div>
+</footer>
+
+<script src="js/savings.js"></script>
+<script src="js/footer.js"></script>
+
+
+</body>
+</html>

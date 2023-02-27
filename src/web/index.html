@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en" class="h-100">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="data:,">
+    <title>Credit Association</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+</head>
+
+<body class="d-flex flex-column h-100">
+
+<header>
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <div class="container-fluid">
+
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+              <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="index.html">Register</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="savings.html">Savings</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link"  href="loans.html">Loans</a>
+                </li>
+              </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<!-- Begin page content -->
+<main class="flex-shrink-0">
+    <div class="container">
+
+      <div class="row g-5">
+        <div class="col-md-7 col-lg-8">
+          <br/><br/>
+          <h4 class="mb-3">Register to become a member</h4>
+          <form class="needs-validation" novalidate="">
+            <div class="row g-3">
+              <div class="col-sm-6">
+                <label for="firstName" class="form-label">First name</label>
+                <input type="text" class="form-control" id="firstName" placeholder="" value="" required="">
+                <div class="invalid-feedback">
+                  Valid first name is required
+                </div>
+              </div>
+
+              <div class="col-sm-6">
+                <label for="lastName" class="form-label">Last name</label>
+                <input type="text" class="form-control" id="lastName" placeholder="" value="" required="">
+                <div class="invalid-feedback">
+                  Valid last name is required
+                </div>
+              </div>
+
+
+              <div class="col-sm-6">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="you@example.com" required="">
+                <div class="invalid-feedback">
+                  Please enter a valid email address
+                </div>
+              </div>
+
+              <div class="col-sm-6">
+                <label for="dob" class="form-label">Date of birth (optional)</label>
+                <input id="dob" class="form-control" type="date">
+              </div>
+
+
+            </div>
+
+            <hr class="my-4">
+
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input" id="heard-about">
+              <label class="form-check-label" for="heard-about">I wish to share how I've heard about this company</label>
+
+            </div>
+
+            <div class="mb-3">
+              <textarea class="form-control" id="textarea" rows="3" disabled></textarea>
+            </div>
+
+
+            <hr class="my-4">
+
+            <button id="clear" class="btn btn-secondary btn-lg" type="submit">Clear</button>
+            <button id="register" class="btn btn-primary btn-lg" type="submit">Register</button>
+            <button id="save" class="btn btn-primary btn-lg" type="submit">Save input</button>
+          </form>
+        </div>
+      </div>
+    </div>
+</main>
+
+<footer class="footer mt-auto py-3 bg-light">
+    <div class="container">
+        <span class="text-muted">© 2022 Credit Union</span>
+        <br/>
+        <span class="text-muted" id="location"></span>
+    </div>
+</footer>
+
+<script src="js/jquery-3.6.0.min.js"></script>
+<script src="js/index.js"></script>
+<script src="js/footer.js"></script>
+
+
+</body>
+</html>
