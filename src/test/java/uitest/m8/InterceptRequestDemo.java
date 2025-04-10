@@ -4,13 +4,10 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.devtools.Command;
 import org.openqa.selenium.devtools.DevTools;
-import org.openqa.selenium.devtools.v85.network.Network;
-import org.openqa.selenium.devtools.v85.network.model.Request;
-import org.openqa.selenium.devtools.v85.network.model.Response;
-import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.devtools.v135.network.Network;
+import org.openqa.selenium.devtools.v135.network.model.Request;
+import org.openqa.selenium.devtools.v135.network.model.Response;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
@@ -24,20 +21,12 @@ import java.util.Optional;
 import static org.openqa.selenium.support.ui.ExpectedConditions.*;
 
 public class InterceptRequestDemo {
+
+// Firefox Driver .getDevTools() method and overall support for CDP deprecated and removed since Selenium v4.27
+// https://www.selenium.dev/blog/2025/remove-cdp-firefox/
+
     WebDriver driver;
     DevTools devTools;
-
-    @Test
-    public void howToGetDevToolsObject() {
-        FirefoxDriver firefoxDriver = new FirefoxDriver();
-        DevTools tools = firefoxDriver.getDevTools();
-
-        ChromeDriver chromeDriver = new ChromeDriver();
-        DevTools tools1 = chromeDriver.getDevTools();
-
-        WebDriver chromeDriver1 = new ChromeDriver();
-        DevTools tools2 = ((ChromeDriver) chromeDriver1).getDevTools();
-    }
 
     @Test
     public void captureRequestTraffic() {

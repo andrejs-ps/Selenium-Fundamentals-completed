@@ -3,7 +3,7 @@ package factory;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.devtools.DevTools;
-import org.openqa.selenium.devtools.v85.network.Network;
+import org.openqa.selenium.devtools.v135.network.Network;
 
 import java.util.Optional;
 
